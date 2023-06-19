@@ -1,0 +1,5 @@
+#g 高版本spring boot 整合 swagger
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
