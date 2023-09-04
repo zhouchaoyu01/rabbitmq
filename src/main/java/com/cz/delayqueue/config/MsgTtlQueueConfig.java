@@ -3,6 +3,7 @@ package com.cz.delayqueue.config;
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Map;
  * @author zhouchaoyu
  * @time 2023-06-19-15:11
  */
+@Configuration
 public class MsgTtlQueueConfig {
     public static final String Y_DEAD_LETTER_EXCHANGE = "Y";
     public static final String QUEUE_C = "QC";
